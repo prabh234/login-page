@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1682687220067-dced9a881b56?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}   
+.login-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 25vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+
+
+.login-box > .input-box > form{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.login-box > h2{
+    font-size: 2em;
+    margin:2vh;
+}
+
+form > .inputs{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 0;
+}
+
+form > .inputs > input{
+    border-style: none none solid none;
+    width: 20vw;
+    height: 5vh;
+    background: transparent;
+    position: relative;
+    padding: 2px;    
+}
+
+form > .inputs > input:focus::placeholder
+{
+   visibility: hidden;
+}
+form > .inputs > input::placeholder
+{
+   font-size:1.2em;
+   color:white;
+}
+
+form > .inputs > input:focus{
+    outline: none ;
+}
+
+
+form > button {
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    color:brown;
+    background-color: white;
+    border-radius:50px;
+}
+
+form > button:hover {
+    border: none;
+    color:white;
+    background-color: rgba(0,0,0,0.2);
+    border-radius:50px;
+}
