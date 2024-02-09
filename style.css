@@ -11,13 +11,13 @@ body{
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1682687220067-dced9a881b56?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://picsum.photos/1200/800/?blur);
     background-size: cover;
 }   
 .box{
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: auto;    
+    margin: auto;    
 }
 
 .login-box{
@@ -25,7 +25,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 25vw;
+    max-width: 28.8rem;
+    min-width: 26.4rem;
     height: 50vh;
     /* display: none; */
     margin: auto;
@@ -36,7 +37,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 25vw;
+    max-width: 28.8rem;
+    min-width: 26.4rem;
     height: 60vh;
     display: none;
 }
@@ -46,10 +48,12 @@ form{
     display: flex;
     /* align-items: center; */
     flex-direction: column;
+     max-width: 24rem;
+     min-width: 22rem;
 }
 
  h2{
-    font-size: 2em;
+    font-size:2em;
     margin:2vh;
 }
 
@@ -57,6 +61,8 @@ form > .inputs{
     display: flex;
     flex-direction: column;
     margin: 5vh 0;
+     max-width: 24rem;
+     min-width: 22rem;
 }
 
 form > .inputs > input{
@@ -65,7 +71,9 @@ form > .inputs > input{
     height: 5vh;
     background: transparent;
     position: relative;
-    padding: 2px;    
+    padding: 2px; 
+     max-width: 24rem;
+     min-width: 22rem;   
 }
 
 form > .inputs > input:focus::placeholder
@@ -90,11 +98,13 @@ form > button {
     color:brown;
     background-color: white;
     border-radius:50px;
+     max-width: 24rem;
+     min-width: 22rem;
 }
 
 form > button:hover {
     border: none;
     color:white;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.374);
     border-radius:50px;
 }
